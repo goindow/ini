@@ -10,6 +10,33 @@ Package toolbox 封装了一个 .ini 格式文件读取器
 ## 索引
 - [Read](#Read)
 
+### 测试数据
+```
+; test-case-0@Annotation ";"
+# test-case-1@Annotation "#"
+
+# test-case-2@Default Section
+a = 1
+# test-case-3@Space
+	b = 2
+# test-case-4@Multiple =
+c = 1 + 1 = 2 
+
+[user]
+name = hyb
+age = 18
+
+[profile]
+github = github.com/goindow
+email = 76788424@qq.com
+
+# test-case-5@Repetitive Section
+[user]
+gender = male
+# test-case-6@Repetitive Item
+age = 99
+```
+
 ### 使用
 ```go
 import (
