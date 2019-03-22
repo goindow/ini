@@ -1,4 +1,4 @@
-// Package toolbox 封装了一个 .ini 格式文件读取器
+// Package ini 封装了一个 .ini 格式文件读取器
 package ini
 
 import (
