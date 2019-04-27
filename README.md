@@ -18,7 +18,7 @@ Package ini 封装了一个 .ini 格式文件读取器
 # test-case-2@Default Section
 a = 1
 # test-case-3@Space
-	b = 2
+    b = 2
 # test-case-4@Multiple =
 c = 1 + 1 = 2 
 
@@ -40,7 +40,7 @@ age = 99
 ### 使用
 ```go
 import (
-	"github.com/goindow/ini"
+    "github.com/goindow/ini"
 )
 ```
 
@@ -50,7 +50,7 @@ import (
 file := ""
 
 if conf, err := ini.read(file); err != nil {
-	fmt.Println(conf)
+    fmt.Println(conf)
 }
 
 // Output:
